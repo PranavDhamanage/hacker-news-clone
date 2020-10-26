@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0em;
+  padding: 0em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.header {
+  white-space: nowrap;
+  color: black;
+  background-color: #ff6600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-weight: 700;
+  color: black;
+  margin: 0.1em 0.1em;
+  font-size: 1.12rem;
+}
+
+.header-logo {
+  border: 1px solid #3b3b3b;
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  margin-bottom: -0.3em;
+}
+
+.header-link {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: all ease-in-out 150ms;
+  margin-left: 0.2em;
+}
+.header-link:hover, .header-link:focus {
+  color: #a7a6a6;
+}
+.header-link:focus {
+  text-decoration: underline;
+}
+
+/*
+==========
+containers
+==========
+*/
+.app-container {
+  width: 85%;
+  margin: 0em auto;
+  background-color: antiquewhite;
+  border: 1px solid red;
+}
+
+.route-container {
+  background-color: #f6f6ef;
+  width: 85%;
+  margin: 0em auto;
+  border: 1px solid black;
+}
+
+/*
+=========
+stories
+=========
+*/
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.story-link {
+  display: flex;
+  width: 100%;
+}
+
+.gray {
+  padding: 0.1em 0.2em;
+  border: 1px solid #a0a0a0;
+  border-radius: 7px;
+  font-size: 0.95rem;
+  margin: 0.1em 0.2em;
+  color: #828282;
+}
+
+.user-info {
+  display: flex;
+  margin-top: -0.9em;
+}
+.user-info .gray {
+  font-size: 0.85rem;
+  border: none;
+  margin-left: 3em;
+  color: #828282;
+}
+
+.upvote {
+  padding: 0.1em 0.1em;
+  margin: 0em 0.2em;
+  color: #828282;
+  font-size: 14px;
+}
+
+.favourite-logo {
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+}
+
+/*
+=========
+comments
+=========
+*/
+.arrow-icon {
+  width: 20px;
+  height: 15px;
+}
+
+/*# sourceMappingURL=styles.css.map */

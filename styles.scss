@@ -1,5 +1,7 @@
 @use "./general.scss";
 @use "./header.scss";
+@use "./comment.scss";
+@use "./animations.scss";
 /*
 ==========
 containers
@@ -39,7 +41,7 @@ stories
   $metrics: 0.1em 0.2em;
   padding: $metrics;
   border: 1px solid #a0a0a0;
-  border-radius: 7px;
+  border-radius: 5px;
   font-size: 0.95rem;
   margin: $metrics;
   color: #828282;
@@ -52,7 +54,7 @@ stories
     font-size: 0.85rem;
     border: none;
     margin: {
-      left: 3em;
+      left: 2.6em;
     }
     color: #828282;
   }
@@ -72,11 +74,44 @@ stories
 }
 
 /*
-=========
-comments
-=========
+------------
+current page
+------------
 */
-.arrow-icon {
-  width: 20px;
-  height: 15px;
+
+.active {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 20px;
+    left: 0;
+    height: 2px;
+    opacity: 1;
+    animation: flowingUnderline 350ms alternate 1;
+    background-color: whitesmoke;
+  }
+}
+
+/*
+----------
+favourites
+----------
+*/
+.added-favourite {
+  background-color: rgb(217, 218, 218);
+  padding: 0.1em 0.2em;
+  border-radius: 5px;
+}
+
+.favourites {
+  cursor: pointer;
+  animation: favourites 250ms both 1;
+}
+
+.favourites-placeholder {
+  text-align: center;
+  font-size: 1.2rem;
 }

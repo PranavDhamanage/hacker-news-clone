@@ -23,16 +23,7 @@
 }
 
 .header-link {
-  color: whitesmoke;
   text-decoration: none;
-  transition: all ease-in-out 150ms;
-  margin-left: 0.2em;
+  color: whitesmoke;
+  outline: none;
 }
-.header-link:hover, .header-link:focus {
-  color: #a7a6a6;
-}
-.header-link:focus {
-  text-decoration: underline;
-}
-
-/*# sourceMappingURL=header.css.map */

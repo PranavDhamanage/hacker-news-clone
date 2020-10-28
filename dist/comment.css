@@ -1,0 +1,91 @@
+.arrow-icon {
+  width: 20px;
+  height: 15px;
+}
+
+.error {
+  color: red;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-header {
+  white-space: nowrap;
+  z-index: 4;
+}
+.comment-header .upvote {
+  margin-right: -0.5em;
+}
+
+.comment-content {
+  width: 95%;
+}
+.comment-content p {
+  margin-top: 0em;
+  margin-left: 1.55em;
+  margin-bottom: 0em;
+}
+
+.nested-comments-0,
+.nested-comments-1,
+.nested-comments-2,
+.nested-comments-3,
+.nested-comments-4,
+.nested-comments-5,
+.nested-comments-6 {
+  position: relative;
+}
+.nested-comments-0::before,
+.nested-comments-1::before,
+.nested-comments-2::before,
+.nested-comments-3::before,
+.nested-comments-4::before,
+.nested-comments-5::before,
+.nested-comments-6::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  z-index: 1;
+  top: 1.1em;
+  bottom: 0;
+  left: 0.7%;
+  position: absolute;
+  background-color: #cac7c7;
+}
+
+.nested-comments-0 {
+  margin-bottom: 0.5em;
+}
+
+.nested-comments-1 {
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+}
+
+.nested-comments-2 {
+  margin-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.nested-comments-3 {
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+}
+
+.nested-comments-4 {
+  margin-left: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.nested-comments-5 {
+  margin-left: 3em;
+  margin-bottom: 0.5em;
+}
+
+.nested-comments-6 {
+  margin-left: 3.5em;
+  margin-bottom: 0.5em;
+}

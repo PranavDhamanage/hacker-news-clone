@@ -1,5 +1,8 @@
+// global state of our app i.e. our global data state - store
+
 function createStore(reducer) {
   let currentState = reducer(undefined, {});
+
   return {
     getState: () => currentState,
     dispatch: (action) => {
@@ -12,6 +15,7 @@ const initialState = {
   favourites: [],
 };
 
+//reducer is a pure function
 function addFavouritesReducer(state = initialState, action) {
   switch (action.type) {
     case "ADD_FAVOURITE": {
@@ -19,6 +23,7 @@ function addFavouritesReducer(state = initialState, action) {
       const favourites = [...state.favourites, addedFavourite];
       return { favourites };
     }
+
     case "REMOVE_FAVOURITE": {
       const removedFavourite = action.payload.favourite;
       const favourites = state.favourites.filter(
@@ -26,6 +31,7 @@ function addFavouritesReducer(state = initialState, action) {
       );
       return { favourites };
     }
+
     default:
       return state;
   }

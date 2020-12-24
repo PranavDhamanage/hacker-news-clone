@@ -6,6 +6,7 @@ import view from "../utils/view.js";
 export default function myFavourites() {
   const { favourites } = store.getState();
   const hasFavourites = favourites.length > 0;
+
   view.innerHTML = `
   <div>
     ${

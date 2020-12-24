@@ -1,4 +1,5 @@
 // global state of our app i.e. our global data state - store
+//this is kind of where the business logic of our app is kept
 
 function createStore(reducer) {
   let currentState = reducer(undefined, {});
@@ -43,6 +44,7 @@ function addFavouritesReducer(state = initialState, action) {
 // };
 
 const store = createStore(addFavouritesReducer);
+
 // store.dispatch(action);
 // console.log(store.getState());
 
